@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Navbar section which will be consistent across all pages-->
+        <div class="navbar">
+            <div class="container">
+                <a class = "logo-name" href="index.html">Matthew<span>Thomson</span></a>
+    
+                <img id="mobile-menu-icon" class="mobile-menu" src="images/menu-right-pngrepo-com.png" alt="Open Navigation">
+    
+                <nav>
+                    <img id="mobile-exit-icon" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="nav-chat-button"><a href="chat.html">Chat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="boxes">
+            <div class="container">
+                <div class="box">
+                    <h2>Background</h2>
+                    <p>
+                        This is some example text. To be replaced
+                    </p>
+                </div>
+        
+                <div class="box">
+                    <h2>Further Details</h2>
+                    <p>
+                        This is some example text. To be replaced
+                    </p>
+                  </div>
+          
+                  <div class="box">
+                    <h2>How this site was developed</h2>
+                    <p>
+                        Includes a brief summary of how the site was developed (you can use
+                        aspects of your submission report but not the full report in its entirety)
+                    </p>
+                  </div>
+        
+            </div>
+        </section>
+
+
+        <!--Additional js for the mobile nav menu if user is on a mobile device-->
+        <!--This grabs the relevant elements from the DOM and adds event listeners for both opening and closing the menu-->
+        <script>
+            const mobileBtn = document.getElementById('mobile-menu-icon')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit-icon');
+    
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn')
+            })
+    
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+        </script>
+
+        
+        <script src="js/client.js" async defer></script>
+
+
+    </body>
+</html>
